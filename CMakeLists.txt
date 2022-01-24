@@ -92,6 +92,7 @@ if((CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME OR MODERN_CMAKE_BUILD_TESTING) AND 
     # Must live in the top level file or tests won't be found.
     include(CTest)  # Automatically invokes enable_testing()
     add_subdirectory(tests)
+    enable_testing()
 endif()
 
 
