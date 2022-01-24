@@ -26,7 +26,7 @@ FetchContent_MakeAvailable(Catch2)
 message("-- Catch2 Available")
 
 # Add libraries for linking
-target_link_libraries(tests PUBLIC cpp_project_example_library test_helpers Catch2 Catch2WithMain) # Uncomment if Catch2 is intalled
+target_link_libraries(tests PUBLIC test_helpers Catch2 Catch2WithMain cpp_project_example_library) # Uncomment if Catch2 is intalled
 
 # This is specific for Catch2
 # include(CTest)
